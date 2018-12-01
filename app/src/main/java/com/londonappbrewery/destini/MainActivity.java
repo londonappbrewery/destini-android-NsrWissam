@@ -31,12 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mTopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mStoryIndex == 1){
-                    mTextView.setText(R.string.T3_Story);
-                    mTopButton.setText(R.string.T3_Ans1);
-                    mBottomButton.setText(R.string.T3_Ans2);
-                    mStoryIndex = 3;
-                } else if (mStoryIndex == 2){
+                if(mStoryIndex == 1 || mStoryIndex == 2){
                     mTextView.setText(R.string.T3_Story);
                     mTopButton.setText(R.string.T3_Ans1);
                     mBottomButton.setText(R.string.T3_Ans2);
