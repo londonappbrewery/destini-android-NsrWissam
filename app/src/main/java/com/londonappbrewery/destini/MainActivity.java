@@ -36,11 +36,10 @@ public class MainActivity extends AppCompatActivity {
                     mTopButton.setText(R.string.T3_Ans1);
                     mBottomButton.setText(R.string.T3_Ans2);
                     mStoryIndex = 3;
-                } else if(mStoryIndex == 3) {
+                } else {
                     mTextView.setText(R.string.T6_End);
                     mTopButton.setVisibility(View.GONE);
                     mBottomButton.setVisibility(View.GONE);
-                    mStoryIndex = 1;
                 }
             }
         });
@@ -60,11 +59,10 @@ public class MainActivity extends AppCompatActivity {
                     mTopButton.setVisibility(View.GONE);
                     mBottomButton.setVisibility(View.GONE);
                     mStoryIndex = 1;
-                }else if (mStoryIndex == 3){
+                }else{
                     mTextView.setText(R.string.T5_End);
                     mTopButton.setVisibility(View.GONE);
                     mBottomButton.setVisibility(View.GONE);
-                    mStoryIndex = 1;
                 }
             }
         });
